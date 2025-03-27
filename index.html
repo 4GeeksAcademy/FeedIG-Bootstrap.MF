@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feed IG Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body class="container-md mx-auto" style="max-width: 800px">
+      <div class="container fluid">
+
+      <!--PRIMER ROW ENCABEZADO-->
+        <div class="row bg-light d-flex justify-content-between">
+            <div class="col-auto d-flex align-items-center gap-1">
+              <i class="fa-brands fa-instagram" style="font-size: 30px"></i>
+              <h4 style="margin-top: 6px;">Instagram</h4>
+            </div>
+
+            <div class="col-auto d-flex align-items-center gap-1">
+              
+              <!--BUTTON TIGGER MODAL-->
+              <button type="button" class="btn btn-success"data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create a new post</button>
+                <!-- MODAL -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body">
+                  <h6>Caption:</h6>
+                  <textarea class="form-control" placeholder="Add the caption of your post here"
+                      id="AddText"></textarea>
+                  <div class="row p-2">
+                      <button class="col-1 border rounded p-1 m-1 btn-light">
+                          <i class="fa-solid fa-camera"></i>
+                      </button>
+                      <button class="col-1 border rounded p-1 m-1 btn-light">
+                          <i class="fa-solid fa-location-dot"></i>
+                      </button>
+                  </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+<!--Dropdown-->
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-gear"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Log out</a></li>
+  </ul>
+  <style>
+    .dropdown-divider {
+      border-color: red !important;
+      opacity: 1;
+    }
+  </style>
+</div>
+</div>
+</div>
+
+  <!--ICONOS CENTRALES GRILLA VS FEED-->
+  <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist" r>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="Grilla" data-bs-toggle="tab" data-bs-target="#view1" 
+        type="button" role="tab" aria-controls="view1" aria-selected="true">
+            <i class="fas fa-table-cells me-2"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="Feed" data-bs-toggle="tab" data-bs-target="#view2" 
+        type="button" role="tab" aria-controls="view2" aria-selected="false">
+            <i class="fas fa-square me-2"></i></button>
+    </li>
+  </ul>
+  <!-- Contenido de las pestañas -->
+  <!-- GRILLA -->
+  <div class="tab-content p-3 border border-top-0 rounded-bottom" id="GrillaIG">
+    <div class="tab-pane fade show active" id="view1" role="tabpanel" aria-labelledby="Grilla">
+      <div class="row gx-1 mb-1"> 
+        <div class="col-4">
+          <img 
+            src="/imagen/books-3454381_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;"
+          >
+        </div>
+        <div class="col-4">
+          <img 
+            src="/imagen/library-3679745_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;"
+          >
+        </div>
+        <div class="col-4">
+          <img 
+            src="/imagen/woman-1839798_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;">
+        </div>
+      </div>
+      <div class="row gx-1 mb-1"> 
+        <div class="col-4">
+          <img 
+            src="/imagen/books-3454381_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;"
+          >
+        </div>
+        <div class="col-4">
+          <img 
+            src="/imagen/library-3679745_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;"
+          >
+        </div>
+        <div class="col-4">
+          <img 
+            src="/imagen/woman-1839798_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;">
+        </div>
+      </div>
+      <div class="row gx-1 mb-1"> 
+        <div class="col-4">
+          <img 
+            src="/imagen/books-3454381_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;"
+          >
+        </div>
+        <div class="col-4">
+          <img 
+            src="/imagen/library-3679745_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;"
+          >
+        </div>
+        <div class="col-4">
+          <img 
+            src="/imagen/woman-1839798_640.jpg" 
+            class="img-fluid w-100 h-100 object-fit-cover"
+            style="max-height: 300px; min-height: 200px;">
+        </div>
+      </div>
+    </div> 
+
+    <!-- FEED -->
+    <div class="tab-pane fade" id="view2" role="tabpanel" aria-labelledby="Feed">
+      <div class="row justify-content-center my-4">
+        <div class="col-12 col-md-8 col-lg-6 mx-auto border rounded p-0">
+          <div class="d-flex justify-content-between p-3 align-items-center">
+            <div class="fs-5 fw-semibold">First Post</div>
+            <small class="text-muted">07/01</small>
+          </div>
+          <img src="/imagen/books-3454381_640.jpg" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+          <div class="p-3">
+            <p class="fw-bold mb-2">29,652 likes</p>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, consequatur quo magnam fugit error recusandae dolorum temporibus ipsum sint asperiores dolor voluptatum aperiam quae autem perspiciatis similique enim qui architecto!</p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center my-4">
+        <div class="col-12 col-md-8 col-lg-6 mx-auto border rounded p-0">
+            <div class="d-flex justify-content-between p-3 align-items-center">
+                <div class="fs-5 fw-semibold">Second Post</div>
+                <small class="align-bottom">08/26</small>
+            </div>
+            <img src="/imagen/library-3679745_640.jpg" class="card-img-top">
+            <div class="p-3">
+                <p class="card-title"><strong>20.400 likes</strong>
+                <p>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nihil doloribus explicabo ea eos optio error similique necessitatibus sunt quam nisi adipisci voluptas aliquam omnis beatae, est earum excepturi iusto..</p>
+                </div>
+            </div>
+        </div>
+    <div class="row justify-content-center my-4">
+        <div class="col-12 col-md-8 col-lg-6 mx-auto border rounded p-0">
+            <div class="d-flex justify-content-between p-3 align-items-center">
+                <div class="w-100 fs-4">My favorite place</div>
+                <small class="align-bottom">12/05</small></div>
+                    <img src="/imagen/woman-1839798_640.jpg" class="card-img-top">
+                    <div class="p-3">
+                        <p class="card-title"><strong>20.630 likes</strong><p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti sequi expedita possimus quaerat reiciendis eos delectus? Inventore qui asperiores corrupti sint? Ipsum rerum sed sint ratione quas cumque voluptas eaque.</p>
+                    </div>
+                </div>
+            </div>      
+    </div>
+  </div>
+</div>
+</div> 
+</div>
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
